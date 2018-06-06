@@ -2,7 +2,7 @@
 
 > Mr Simon Cohen - A working Slim website example.
 
-Read the post [here](https://www.codementor.io/lautiamkok/) about this repository.
+Read the post [here](https://www.codementor.io/lautiamkok/mr-simon-cohen-on-slim-k8n71rz89) about this repository.
 
 # REQUIREMENTS
 
