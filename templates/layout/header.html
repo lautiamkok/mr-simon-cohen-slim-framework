@@ -1,0 +1,48 @@
+<header role="navigation">
+
+    <div class="container container-xl">
+        <div class="row eq-heightx">
+
+            <div class="col-lg-11">
+                <nav class="nav-header eq-heightx">
+
+                    <div class="col-lg-4">
+                        <div class="flex-center">
+                            <a class="button-home" href="/">
+                                <img src="/images/logo-mr-simon-cohen.png" class="img-responsive" />
+                            </a>
+                        </div>
+
+                        <div class="visible-xs">
+                            <div class="flex-center">
+                                <button class="button-toggle-menu" data-toggle="collapse" data-target="#navbar">
+                                    <span class="glyphicon glyphicon-menu-hamburger"></span> Menu
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-8 flex-center">
+                        <ul class="nav-menu-items navbar-collapse collapse" id="navbar">
+                          <li{% if current == 'story' %} class="active"{% endif %}><a href="/story">My Story </a></li>
+                          <li{% if current == 'speaking' %} class="active"{% endif %}><a href="/speaking">Speaking </a></li>
+                          <!-- <li{% if current == 'tv-radio' %} class="active"{% endif %}><a href="/tv-radio">TV &amp; Radio</a></li>
+                          <li{% if current == 'why' %} class="active"{% endif %}><a href="/why">Why?</a></li> -->
+                          <li{% if current == 'contact' %} class="active"{% endif %}><a href="/contact">Contact</a></li>
+                        </ul>
+                    </div>
+
+                </nav>
+            </div>
+
+            <div class="col-lg-1 container-social-media flex-center">
+                <ul class="social-media">
+                    <li><a href="https://www.facebook.com/mrsimoncohen" target="_blank" title="Facebook" class="button-facebook"><span class="icon-facebook"></span></a></li>
+                    <li><a href="https://twitter.com/mrsimoncohen" target="_blank" title="Twitter" class="button-twitter"><span class="icon-twitter"></span></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+</header>

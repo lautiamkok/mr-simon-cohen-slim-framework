@@ -1,0 +1,60 @@
+{% extends './layout/base.html' %}
+
+{% block head %}
+    <script src="/js/shuffle.js"></script>
+{% endblock %}
+
+{% block title %}
+    <title>Quotes | Mr Simon Cohen</title>
+{% endblock %}
+
+{% block main %}
+    <main role="main">
+
+        {% include 'nav-keywords.html' %}
+
+        <div class="container container-xl shuffle-sets">
+
+            <!-- set 1 -->
+            <div class="row eq-height shuffle">
+
+                <div class="col-sm-3">
+                    <div class="col-sm-12">
+                        <a href="/keywords/quotes/mattie-stepanek" class="grid-item" style="background-image:url('/media/mattie-stepanek-hero1.jpg')">
+                            <img class="img-responsive" src="/media/mattie-stepanek-hero1.jpg" alt="Mattie J T Stepanek">
+                            <span class="item-title-overlay">a mosaic of gifts...</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="col-sm-12">
+                        <a href="/keywords/quotes/malala-yousafzai" class="grid-item" style="background-image:url('/media/malala-yousafzai-ftr.jpg')">
+                            <img class="img-responsive" src="/media/malala-yousafzai-ftr.jpg" alt="Malala">
+                            <span class="item-title-overlay">when the world is silent...</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="col-sm-12">
+                        <a href="/keywords/quotes/robbie-williams" class="grid-item" style="background-image:url('/media/Williams_Robbie_PS.jpg')">
+                            <img class="img-responsive" src="/media/Williams_Robbie_PS.jpg" alt="Robbie Williams">
+                            <span class="item-title-overlay">Robbie says...</span>
+                        </a>
+                    </div>
+                    <div class="col-sm-12">
+                        <a href="/keywords/quotes/simon-cohen" class="grid-item" style="background-image:url('/media/20130529-DSC_0250.jpeg')">
+                            <img class="img-responsive" src="/media/20130529-DSC_0250.jpeg" alt="Simon">
+                            <span class="item-title-overlay">quoting someone is...</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- set 1 -->
+
+        </div>
+
+    </main>
+{% endblock %}

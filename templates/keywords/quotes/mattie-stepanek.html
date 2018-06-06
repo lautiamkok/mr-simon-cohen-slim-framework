@@ -1,0 +1,37 @@
+{% extends './layout/base.html' %}
+
+{% block head %}
+    <script src="js/scroll-reveal.js"></script>
+{% endblock %}
+
+{% block title %}
+    <title>Mattie J T Stepanek | Mr Simon Cohen</title>
+{% endblock %}
+
+{% block main %}
+    <main role="main" id="main" class="main-container">
+
+        {% include 'nav-keywords.html' %}
+
+        <!-- section-1 -->
+        <section class="full-screenx section-1">
+            <div class="container section-container">
+
+              <div id="section1-heading1" class="animation-placeholder animated fadeIn">
+                <h2 class="heading font-size-lg"> 'We are a mosaic of gifts. Each of us has our inner beauty, no matter how we look.' <br/><br/>Mattie J T Stepanek</h2>
+              </div>
+
+              <div id="section4-image1" class="animation-placeholder">
+                  <div class="trigger" id="section4-image1-trigger">trigger</div>
+
+                  <img class="img-responsive" src="/media/mattie-stepanek-hero1.jpg" alt="Mattie J T Stepanek">
+
+                  <p>This quote from Mattie is part of the inspiration behind the mosaic design of mrsimoncohen.com. So many sites present reality as something that is linear or binary, as though we can neatly section off each section of our lives and work. The mosaic honours the interconnected nature of all - and celebrates each person, each tile, as equally important and valuable.</p>
+
+              </div>
+
+            </div>
+        </section>
+
+    </main>
+{% endblock %}

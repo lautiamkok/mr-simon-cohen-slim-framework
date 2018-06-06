@@ -1,0 +1,1007 @@
+{% extends './layout/base.html' %}
+
+{% block head %}
+    <script src="/js/scroll-reveal.js"></script>
+{% endblock %}
+
+{% block title %}
+    <title>Speaking | Mr Simon Cohen</title>
+{% endblock %}
+
+{% block main %}
+    <main role="main" id="main" class="main-container">
+
+        <!--
+        <div class="container container-xl" >
+
+            <div class="row anchor-parent">
+
+                <div class="anchor-navbar" id="navbar">
+
+                  <a class="button-home-anchor" href="#"><img src="images/logo-mr-simon-cohen.png" class="img-responsive" /></a>
+
+                  <nav aria-label="Page navigation">
+                    <ul class="pagination custom pagination-lg justify-content-end">
+                      <li id="high1" class="page-item"><a class="page-link" href="#1">1</a></li>
+                      <li id="high2" class="page-item"><a class="page-link" href="#2">2</a></li>
+                      <li id="high3" class="page-item"><a class="page-link" href="#3">3</a></li>
+                      <li id="high4" class="page-item"><a class="page-link" href="#4">4</a></li>
+                      <li id="high5" class="page-item"><a class="page-link" href="#5">5</a></li>
+                      <li id="high6" class="page-item"><a class="page-link" href="#6">6</a></li>
+                      <li id="high7" class="page-item"><a class="page-link" href="#7">7</a></li>
+                      <li id="high8" class="page-item"><a class="page-link" href="#8">8</a></li>
+                    </ul>
+                  </nav>
+
+                </div>
+
+            </div>
+
+        </div>
+        -->
+
+        <script type="text/javascript">
+          // Init controller
+          var scrollMagicController = new ScrollMagic.Controller();
+        </script>
+
+        <!-- section-1 -->
+        <section class="full-screenx section-1">
+            <div class="container section-container">
+
+              <a class="anchor" id="1">anchor 1</a>
+
+              <div id="section1-heading1" class="animation-placeholder animated fadeIn">
+                <h2 class="heading font-size-lg">It might seem crazy, what I’m about to say...</h2>
+              </div>
+
+              <div id="section1-video1" class="animation-placeholder animated fadeIn">
+                <!-- 16:9 aspect ratio -->
+                <div class="embed-responsive embed-responsive-16by9">
+                   <iframe src="https://player.vimeo.com/video/137638868" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
+              </div>
+
+              <div class="animation-placeholder animation-placeholder-arrow">
+                  <div class="trigger center" id="section1-arrow1-trigger">trigger</div>
+                  <div class="arrow-container">
+                    <svg class="arrow up" viewbox="0 0 7 10">
+                      <path d="M3.5 0 L7 10 Q3.5 7 0 10z"/>
+                    </svg>
+                    <svg class="arrow down" viewbox="0 0 7 10">
+                      <path d="M3.5 10 L7 0 Q3.5 3 0 0z"/>
+                    </svg>
+                  </div>
+              </div>
+
+            </div>
+        </section>
+
+        <!-- section-2 -->
+        <section class="full-screenx section-2">
+            <div class="container section-container">
+
+            <a class="anchor" id="2">anchor 2</a>
+
+            <div class="animation-placeholder">
+                <div class="trigger" id="section2-heading1-trigger">trigger</div>
+                <h2 class="heading font-size-lg" id="section2-heading1">I speak my heart. My truth. In my own way...</h2>
+            </div>
+
+            <div class="animation-placeholder animation-placeholder-arrow" id="section2-arrow1">
+              <div class="trigger center" id="section2-arrow1-trigger">trigger</div>
+
+              <div class="arrow-container">
+                <svg class="arrow up" viewbox="0 0 7 10">
+                  <path d="M3.5 0 L7 10 Q3.5 7 0 10z"/>
+                </svg>
+                <svg class="arrow down" viewbox="0 0 7 10">
+                  <path d="M3.5 10 L7 0 Q3.5 3 0 0z"/>
+                </svg>
+              </div>
+            </div>
+
+            </div>
+            <script type="text/javascript">
+                // animate 1
+                var elem = document.getElementById("section2-heading1");
+                TweenMax.set(elem, {bottom:'-30px', opacity: 0, position: 'relative'});
+
+                var tween = TweenMax.to(elem, 0.5, {
+                    bottom: 0,
+                    opacity:1,
+                    ease: Linear.easeIn
+                });
+
+                var scene2 = new ScrollMagic.Scene({
+                     triggerElement: '#section1-arrow1-trigger',
+                })
+                .setTween(tween)
+                .addTo(scrollMagicController);
+
+                // animate 2
+                var elem = document.getElementById("section2-arrow1");
+                TweenMax.set(elem, {opacity: 0});
+
+                var tween = TweenMax.to(elem, 0.5, {
+                    opacity:1,
+                    ease: Linear.easeNone
+                });
+
+                var scene3 = new ScrollMagic.Scene({
+                     triggerElement: '#section2-heading1-trigger',
+                })
+                .setTween(tween)
+                .addTo(scrollMagicController);
+          </script>
+        </section>
+
+        <!-- section-3 -->
+        <section class="full-screenx section-3">
+            <div class="container section-container">
+
+              <a class="anchor" id="3">anchor 3</a>
+              <div class="animation-placeholder">
+                <div class="trigger" id="section3-heading1-trigger">trigger</div>
+
+                <h2 class="heading font-size-lg" id="section3-heading1">Whether it is Pause for Thought on Radio 2...</h2>
+              </div>
+
+              <div id="section3-video1" class="animation-placeholder">
+                <div class="trigger" id="section3-video1-trigger">trigger</div>
+
+                <!-- 16:9 aspect ratio -->
+                <div class="embed-responsive embed-responsive-16by9">
+                <iframe src="https://player.vimeo.com/video/206559956" frameborder="0" allowfullscreen></iframe>
+                </div>
+
+                <p>Merlin, mountains, leadership and taking the first step...</p>
+              </div>
+
+              <div class="animation-placeholder animation-placeholder-arrow" id="section3-arrow1">
+                  <div class="trigger center" id="section3-arrow1-trigger">trigger</div>
+
+                  <div class="arrow-container">
+                    <svg class="arrow up" viewbox="0 0 7 10">
+                      <path d="M3.5 0 L7 10 Q3.5 7 0 10z"/>
+                    </svg>
+                    <svg class="arrow down" viewbox="0 0 7 10">
+                      <path d="M3.5 10 L7 0 Q3.5 3 0 0z"/>
+                    </svg>
+                  </div>
+              </div>
+
+            </div>
+
+            <script type="text/javascript">
+                // animate
+                var elem = document.getElementById("section3-heading1");
+                TweenMax.set(elem, {bottom:'-30px', opacity: 0, position: 'relative'});
+
+                var tween = TweenMax.to(elem, 0.5, {
+                    bottom: 0,
+                    opacity:1,
+                    ease: Linear.easeIn
+                });
+
+                var scene = new ScrollMagic.Scene({
+                     triggerElement: '#section2-arrow1-trigger',
+                })
+                .setTween(tween)
+                .addTo(scrollMagicController);
+
+                // animate
+                var elem = document.getElementById("section3-video1");
+                TweenMax.set(elem, {opacity: 0});
+
+                var tween = TweenMax.to(elem, 0.5, {
+                    opacity:1,
+                    ease: Linear.easeIn
+                });
+
+                var scene = new ScrollMagic.Scene({
+                     triggerElement: '#section3-heading1-trigger',
+                })
+                .setTween(tween)
+                .addTo(scrollMagicController);
+
+                // animate
+                var elem = document.getElementById("section3-arrow1");
+                TweenMax.set(elem, {opacity: 0});
+
+                var tween = TweenMax.to(elem, 0.5, {
+                    opacity:1,
+                    ease: Linear.easeNone
+                });
+
+                var scene = new ScrollMagic.Scene({
+                     triggerElement: '#section2-heading1-trigger',
+                })
+                .setTween(tween)
+                .addTo(scrollMagicController);
+            </script>
+        </section>
+
+        <!-- section-4 -->
+        <section class="full-screenx section-4">
+            <div class="container section-container">
+
+              <a class="anchor" id="4">anchor 4</a>
+              <div class="animation-placeholder">
+                <div class="trigger" id="section4-heading1-trigger">trigger</div>
+
+                <h2 class="heading font-size-lg" id="section4-heading1">Or speaking in some pretty cool places...</h2>
+              </div>
+
+              <div id="section4-image1" class="animation-placeholder">
+                  <div class="trigger" id="section4-image1-trigger">trigger</div>
+
+                  <img class="img-responsive" src="/media/maxresdefault.jpg" alt="">
+
+                  <p> I’d like to take personal responsibility for the guy on the right with his head in his hand. As well as the Cannes Lions International Festival of Creativity, I’ve also given keynote talks at: (deep breath) UNESCO (Bangkok); Wilderness Festival (Oxfordshire); World Economic Forum (Jordan); University of Cambridge (you’ll never guess); ASCL National Conference (Birmingham); Harvard Business Review (Boston); United Nations (New York); World Youth Summit (London);  Amani Institute (Sao Paolo and Nairobi); Teach First (Leeds); Sustainability Leaders Forum (London); Martin Luther King Jr International Chapel (Atlanta); Just Peace Summit (New York): TEDx host / MC (Uganda); We Are Family Foundation Gala host / MC (New York); Universal Forum of Cultures (Mexico); World Spirit Forum (Switzerland); Georgetown University (Washington); Initiatives of Change (London); Parliament of World’s Religions (Barcelona); International Communications Forum (Switzerland);  Temple of Understanding (New York); Lotsa schools (UK)</p>
+              </div>
+
+              <div class="animation-placeholder animation-placeholder-arrow" id="section4-arrow1">
+                  <div class="trigger center" id="section4-arrow1-trigger">trigger</div>
+
+                  <div class="arrow-container">
+                    <svg class="arrow up" viewbox="0 0 7 10">
+                      <path d="M3.5 0 L7 10 Q3.5 7 0 10z"/>
+                    </svg>
+                    <svg class="arrow down" viewbox="0 0 7 10">
+                      <path d="M3.5 10 L7 0 Q3.5 3 0 0z"/>
+                    </svg>
+                  </div>
+              </div>
+
+            </div>
+
+            <script type="text/javascript">
+                // animate
+                var elem = document.getElementById("section4-heading1");
+                TweenMax.set(elem, {bottom:'-30px', opacity: 0, position: 'relative'});
+
+                var tween = TweenMax.to(elem, 0.5, {
+                    bottom: 0,
+                    opacity:1,
+                    ease: Linear.easeIn
+                });
+
+                var scene = new ScrollMagic.Scene({
+                     triggerElement: '#section3-arrow1-trigger',
+                })
+                .setTween(tween)
+                .addTo(scrollMagicController);
+
+                // animate
+                var elem = document.getElementById("section4-image1");
+                TweenMax.set(elem, {opacity: 0});
+
+                var tween = TweenMax.to(elem, 0.5, {
+                    opacity:1,
+                    ease: Linear.easeIn
+                });
+
+                var scene = new ScrollMagic.Scene({
+                     triggerElement: '#section4-heading1-trigger',
+                })
+                .setTween(tween)
+                .addTo(scrollMagicController);
+
+                // animate
+                var elem = document.getElementById("section4-arrow1");
+                TweenMax.set(elem, {opacity: 0});
+
+                var tween = TweenMax.to(elem, 0.5, {
+                    opacity:1,
+                    ease: Linear.easeNone
+                });
+
+                var scene = new ScrollMagic.Scene({
+                     triggerElement: '#section4-heading1-trigger',
+                })
+                .setTween(tween)
+                .addTo(scrollMagicController);
+            </script>
+
+        </section>
+
+        <!-- section-5 -->
+        <section class="full-screenx section-5">
+            <div class="container section-container">
+
+              <a class="anchor" id="5">anchor 5</a>
+              <div class="animation-placeholder">
+                <div class="trigger" id="section5-heading1-trigger">trigger</div>
+
+                <h2 class="heading font-size-lg" id="section5-heading1">Hosting TEDxTeen...</h2>
+              </div>
+
+              <div id="section5-video1" class="animation-placeholder">
+                <div class="trigger" id="section5-video1-trigger">trigger</div>
+
+                <!-- 16:9 aspect ratio -->
+                <div class="embed-responsive embed-responsive-16by9">
+                <iframe src="https://player.vimeo.com/video/207092375" frameborder="0" allowfullscreen></iframe>
+                </div>
+
+                <p>Clinging with my fingernails to the last remnants of youth, I have been involved with TEDxTeen since 2010. I hosted the first ever one at Scholastic in New York, and co-hosted TEDxTeen 2016 with Ella Purnell at the O2 in London (pictured). I am also the speaker coach, a role I have played at many events across the globe.</p>
+              </div>
+
+              <div class="animation-placeholder animation-placeholder-arrow" id="section5-arrow1">
+                  <div class="trigger center" id="section5-arrow1-trigger">trigger</div>
+
+                  <div class="arrow-container">
+                    <svg class="arrow up" viewbox="0 0 7 10">
+                      <path d="M3.5 0 L7 10 Q3.5 7 0 10z"/>
+                    </svg>
+                    <svg class="arrow down" viewbox="0 0 7 10">
+                      <path d="M3.5 10 L7 0 Q3.5 3 0 0z"/>
+                    </svg>
+                  </div>
+              </div>
+
+            </div>
+
+            <script type="text/javascript">
+                // animate
+                var elem = document.getElementById("section5-heading1");
+                TweenMax.set(elem, {bottom:'-30px', opacity: 0, position: 'relative'});
+
+                var tween = TweenMax.to(elem, 0.5, {
+                    bottom: 0,
+                    opacity:1,
+                    ease: Linear.easeIn
+                });
+
+                var scene = new ScrollMagic.Scene({
+                     triggerElement: '#section4-arrow1-trigger',
+                })
+                .setTween(tween)
+                .addTo(scrollMagicController);
+
+                // animate
+                var elem = document.getElementById("section5-video1");
+                TweenMax.set(elem, {opacity: 0});
+
+                var tween = TweenMax.to(elem, 0.5, {
+                    opacity:1,
+                    ease: Linear.easeIn
+                });
+
+                var scene = new ScrollMagic.Scene({
+                     triggerElement: '#section5-heading1-trigger',
+                })
+                .setTween(tween)
+                .addTo(scrollMagicController);
+
+                // animate
+                var elem = document.getElementById("section5-arrow1");
+                TweenMax.set(elem, {opacity: 0});
+
+                var tween = TweenMax.to(elem, 0.5, {
+                    opacity:1,
+                    ease: Linear.easeNone
+                });
+
+                var scene = new ScrollMagic.Scene({
+                     triggerElement: '#section5-heading1-trigger',
+                })
+                .setTween(tween)
+                .addTo(scrollMagicController);
+            </script>
+
+        </section>
+
+        <!-- section-6 -->
+        <section class="full-screenx section-6">
+            <div class="container section-container">
+
+              <a class="anchor" id="6">anchor 6</a>
+
+              <div class="animation-placeholder">
+                <div class="trigger" id="section6-heading1-trigger">trigger</div>
+
+                <h2 class="heading font-size-lg" id="section6-heading1">I speak about leadership, taking inspiration from world leaders and dignitaries I have worked with...</h2>
+              </div>
+
+              <div id="section6-video1" class="animation-placeholder">
+                <div class="trigger" id="section6-video1-trigger">trigger</div>
+
+                <!-- 16:9 aspect ratio -->
+                <div class="embed-responsive embed-responsive-16by9">
+                   <iframe src="https://player.vimeo.com/video/206235073" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
+
+                <p> Among the leadership subjects I speak about are: unconventional wisdom; creativity; leadership trends; crisis management; leading from the heart; sustainability and leadership; the use of semicolons; education and leadership; inspiring young leaders; leadership and failure; leadership and the media; the virtues of leaders - always with a focus on storytelling and powerful questions</p>
+              </div>
+
+              <div class="animation-placeholder animation-placeholder-arrow" id="section6-arrow1">
+                  <div class="trigger center" id="section6-arrow1-trigger">trigger</div>
+
+                  <div class="arrow-container">
+                    <svg class="arrow up" viewbox="0 0 7 10">
+                      <path d="M3.5 0 L7 10 Q3.5 7 0 10z"/>
+                    </svg>
+                    <svg class="arrow down" viewbox="0 0 7 10">
+                      <path d="M3.5 10 L7 0 Q3.5 3 0 0z"/>
+                    </svg>
+                  </div>
+              </div>
+
+            </div>
+
+            <script type="text/javascript">
+                // animate
+                var elem = document.getElementById("section6-heading1");
+                TweenMax.set(elem, {bottom:'-30px', opacity: 0, position: 'relative'});
+
+                var tween = TweenMax.to(elem, 0.5, {
+                    bottom: 0,
+                    opacity:1,
+                    ease: Linear.easeIn
+                });
+
+                var scene = new ScrollMagic.Scene({
+                     triggerElement: '#section5-arrow1-trigger',
+                })
+                .setTween(tween)
+                .addTo(scrollMagicController);
+
+                // animate
+                var elem = document.getElementById("section6-video1");
+                TweenMax.set(elem, {opacity: 0});
+
+                var tween = TweenMax.to(elem, 0.5, {
+                    opacity:1,
+                    ease: Linear.easeIn
+                });
+
+                var scene = new ScrollMagic.Scene({
+                     triggerElement: '#section6-heading1-trigger',
+                })
+                .setTween(tween)
+                .addTo(scrollMagicController);
+
+                // animate
+                var elem = document.getElementById("section6-arrow1");
+                TweenMax.set(elem, {opacity: 0});
+
+                var tween = TweenMax.to(elem, 0.5, {
+                    opacity:1,
+                    ease: Linear.easeNone
+                });
+
+                var scene = new ScrollMagic.Scene({
+                     triggerElement: '#section6-heading1-trigger',
+                })
+                .setTween(tween)
+                .addTo(scrollMagicController);
+            </script>
+
+        </section>
+
+        <!-- section-7 -->
+        <section class="full-screenx section-7">
+            <div class="container section-container">
+
+              <a class="anchor" id="7">anchor 7</a>
+
+              <div class="animation-placeholder">
+                <div class="trigger" id="section7-heading1-trigger">trigger</div>
+
+                <h2 class="heading font-size-lg" id="section7-heading1">I focus on big ideas and practical wisdom, developed through my career leading campaigns for social innovation and justice...</h2>
+              </div>
+
+              <div class="animation-placeholder animation-placeholder-arrow" id="section7-arrow1">
+                  <div class="trigger center" id="section7-arrow1-trigger">trigger</div>
+
+                  <div class="arrow-container">
+                    <svg class="arrow up" viewbox="0 0 7 10">
+                      <path d="M3.5 0 L7 10 Q3.5 7 0 10z"/>
+                    </svg>
+                    <svg class="arrow down" viewbox="0 0 7 10">
+                      <path d="M3.5 10 L7 0 Q3.5 3 0 0z"/>
+                    </svg>
+                  </div>
+              </div>
+
+            </div>
+
+            <script type="text/javascript">
+                // animate
+                var elem = document.getElementById("section7-heading1");
+                TweenMax.set(elem, {bottom:'-30px', opacity: 0, position: 'relative'});
+
+                var tween = TweenMax.to(elem, 0.5, {
+                    bottom: 0,
+                    opacity:1,
+                    ease: Linear.easeIn
+                });
+
+                var scene = new ScrollMagic.Scene({
+                     triggerElement: '#section6-arrow1-trigger',
+                })
+                .setTween(tween)
+                .addTo(scrollMagicController);
+
+                // animate
+                var elem = document.getElementById("section7-arrow1");
+                TweenMax.set(elem, {opacity: 0});
+
+                var tween = TweenMax.to(elem, 0.5, {
+                    opacity:1,
+                    ease: Linear.easeNone
+                });
+
+                var scene = new ScrollMagic.Scene({
+                     triggerElement: '#section7-heading1-trigger',
+                })
+                .setTween(tween)
+                .addTo(scrollMagicController);
+            </script>
+        </section>
+
+        <!-- section-8 -->
+        <section class="full-screenx section-8">
+            <div class="container section-container">
+
+              <a class="anchor" id="8">anchor 8</a>
+
+              <div class="animation-placeholder">
+                <div class="trigger" id="section8-heading1-trigger">trigger</div>
+
+                <h2 class="heading font-size-lg" id="section8-heading1">And big questions, like:</h2>
+              </div>
+
+              <div class="animation-placeholder">
+                <div class="trigger" id="section8-paragraph1-trigger">trigger</div>
+
+                <div class="section-paragraph" id="section8-paragraph1">
+                  <p>
+                  How do you move the meaning of a word? <br/>
+                  How can you reach 700,000,000 people with £70 and a wookie?
+                  </p>
+                </div>
+              </div>
+
+              <div id="section8-video1" class="animation-placeholder">
+                <div class="trigger" id="section8-video1-trigger">trigger</div>
+
+                <!-- 16:9 aspect ratio -->
+                <div class="embed-responsive embed-responsive-16by9">
+                   <iframe src="https://player.vimeo.com/video/207475299" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
+
+              </div>
+
+              <div class="animation-placeholder animation-placeholder-arrow" id="section8-arrow1">
+                  <div class="trigger center" id="section8-arrow1-trigger">trigger</div>
+
+                  <div class="arrow-container">
+                    <svg class="arrow up" viewbox="0 0 7 10">
+                      <path d="M3.5 0 L7 10 Q3.5 7 0 10z"/>
+                    </svg>
+                    <svg class="arrow down" viewbox="0 0 7 10">
+                      <path d="M3.5 10 L7 0 Q3.5 3 0 0z"/>
+                    </svg>
+                  </div>
+              </div>
+
+            </div>
+
+            <script type="text/javascript">
+                // animate
+                var elem = document.getElementById("section8-heading1");
+                TweenMax.set(elem, {bottom:'-30px', opacity: 0, position: 'relative'});
+
+                var tween = TweenMax.to(elem, 0.5, {
+                    bottom: 0,
+                    opacity:1,
+                    ease: Linear.easeIn
+                });
+
+                var scene = new ScrollMagic.Scene({
+                     triggerElement: '#section7-arrow1-trigger',
+                })
+                .setTween(tween)
+                .addTo(scrollMagicController);
+
+                // animate
+                var elem = document.getElementById("section8-paragraph1");
+                TweenMax.set(elem, {bottom:'-30px', opacity: 0, position: 'relative'});
+
+                var tween = TweenMax.to(elem, 0.5, {
+                    bottom: 0,
+                    opacity:1,
+                    ease: Linear.easeIn
+                });
+
+                var scene = new ScrollMagic.Scene({
+                     triggerElement: '#section8-paragraph1-trigger',
+                })
+                .setTween(tween)
+                .addTo(scrollMagicController);
+
+                // animate
+                var elem = document.getElementById("section8-video1");
+                TweenMax.set(elem, {opacity: 0});
+
+                var tween = TweenMax.to(elem, 0.5, {
+                    opacity:1,
+                    ease: Linear.easeIn
+                });
+
+                var scene = new ScrollMagic.Scene({
+                     triggerElement: '#section8-video1-trigger',
+                })
+                .setTween(tween)
+                .addTo(scrollMagicController);
+
+                // animate
+                var elem = document.getElementById("section8-arrow1");
+                TweenMax.set(elem, {opacity: 0});
+
+                var tween = TweenMax.to(elem, 0.5, {
+                    opacity:1,
+                    ease: Linear.easeNone
+                });
+
+                var scene = new ScrollMagic.Scene({
+                     triggerElement: '#section8-heading1-trigger',
+                })
+                .setTween(tween)
+                .addTo(scrollMagicController);
+            </script>
+        </section>
+
+        <!-- section-9 -->
+        <section class="full-screenx section-9">
+            <div class="container section-container">
+
+              <a class="anchor" id="9">anchor 9</a>
+
+              <div class="animation-placeholder">
+                <div class="trigger" id="section9-heading1-trigger">trigger</div>
+
+                <h2 class="heading font-size-lg" id="section9-heading1">Some of my past talk titles include...</h2>
+              </div>
+
+              <div class="animation-placeholder">
+                <div class="trigger" id="section9-paragraph1-trigger">trigger</div>
+
+                <div class="section-paragraph" id="section9-paragraph1">
+                  <p>
+                    The Power of Why To Sustain Leaders <br/>
+                    Leading from the Heart<br/>
+                    What’s Better Than Perfect?<br/>
+                    The Other 9/11<br/>
+                    How To Be Wise<br/>
+                    Why I Gave Away My Company<br/>
+                    Communications With Conscience<br/>
+                    Playstation, Pizza and a Living Buddha<br/>
+                    PR for God
+
+                  </p>
+                </div>
+              </div>
+
+              <div class="animation-placeholder animation-placeholder-arrow" id="section9-arrow1">
+                  <div class="trigger center" id="section9-arrow1-trigger">trigger</div>
+
+                  <div class="arrow-container">
+                    <svg class="arrow up" viewbox="0 0 7 10">
+                      <path d="M3.5 0 L7 10 Q3.5 7 0 10z"/>
+                    </svg>
+                    <svg class="arrow down" viewbox="0 0 7 10">
+                      <path d="M3.5 10 L7 0 Q3.5 3 0 0z"/>
+                    </svg>
+                  </div>
+              </div>
+
+            </div>
+
+            <script type="text/javascript">
+                // animate
+                var elem = document.getElementById("section9-heading1");
+                TweenMax.set(elem, {bottom:'-30px', opacity: 0, position: 'relative'});
+
+                var tween = TweenMax.to(elem, 0.5, {
+                    bottom: 0,
+                    opacity:1,
+                    ease: Linear.easeIn
+                });
+
+                var scene = new ScrollMagic.Scene({
+                     triggerElement: '#section8-arrow1-trigger',
+                })
+                .setTween(tween)
+                .addTo(scrollMagicController);
+
+                // animate
+                var elem = document.getElementById("section9-paragraph1");
+                TweenMax.set(elem, {bottom:'-30px', opacity: 0, position: 'relative'});
+
+                var tween = TweenMax.to(elem, 0.5, {
+                    bottom: 0,
+                    opacity:1,
+                    ease: Linear.easeIn
+                });
+
+                var scene = new ScrollMagic.Scene({
+                     triggerElement: '#section9-paragraph1-trigger',
+                })
+                .setTween(tween)
+                .addTo(scrollMagicController);
+
+                // animate
+                var elem = document.getElementById("section9-arrow1");
+                TweenMax.set(elem, {opacity: 0});
+
+                var tween = TweenMax.to(elem, 0.5, {
+                    opacity:1,
+                    ease: Linear.easeNone
+                });
+
+                var scene = new ScrollMagic.Scene({
+                     triggerElement: '#section9-heading1-trigger',
+                })
+                .setTween(tween)
+                .addTo(scrollMagicController);
+            </script>
+        </section>
+
+        <!-- section-10 -->
+        <section class="full-screenx section-10">
+            <div class="container section-container">
+
+              <a class="anchor" id="10">anchor 10</a>
+
+              <div class="animation-placeholder">
+                <div class="trigger" id="section10-heading1-trigger">trigger</div>
+
+                <h2 class="heading font-size-lg" id="section10-heading1">‘One of our huge Pause for Thought favourites...<br/>Absolutely brilliant - a great guy and a deep thinker’<br/>
+                Chris Evans</h2>
+              </div>
+
+              <div id="section10-image1" class="animation-placeholder">
+                <div class="trigger" id="section10-image1-trigger">trigger</div>
+                <img class="img-responsive" src="/media/p01s97md.jpg" alt="">
+                <p>I was privileged to join this lovely man on his BBC breakfast show for two years.</p>
+              </div>
+
+              <div class="animation-placeholder animation-placeholder-arrow" id="section10-arrow1">
+                  <div class="trigger center" id="section10-arrow1-trigger">trigger</div>
+
+                  <div class="arrow-container">
+                    <svg class="arrow up" viewbox="0 0 7 10">
+                      <path d="M3.5 0 L7 10 Q3.5 7 0 10z"/>
+                    </svg>
+                    <svg class="arrow down" viewbox="0 0 7 10">
+                      <path d="M3.5 10 L7 0 Q3.5 3 0 0z"/>
+                    </svg>
+                  </div>
+              </div>
+
+            </div>
+
+            <script type="text/javascript">
+                // animate
+                var elem = document.getElementById("section10-heading1");
+                TweenMax.set(elem, {bottom:'-30px', opacity: 0, position: 'relative'});
+
+                var tween = TweenMax.to(elem, 0.5, {
+                    bottom: 0,
+                    opacity:1,
+                    ease: Linear.easeIn
+                });
+
+                var scene = new ScrollMagic.Scene({
+                     triggerElement: '#section9-arrow1-trigger',
+                })
+                .setTween(tween)
+                .addTo(scrollMagicController);
+
+                // animate
+                var elem = document.getElementById("section10-image1");
+                TweenMax.set(elem, {opacity: 0});
+
+                var tween = TweenMax.to(elem, 0.5, {
+                    opacity:1,
+                    ease: Linear.easeIn
+                });
+
+                var scene = new ScrollMagic.Scene({
+                     triggerElement: '#section10-heading1-trigger',
+                })
+                .setTween(tween)
+                .addTo(scrollMagicController);
+
+                // animate
+                var elem = document.getElementById("section10-arrow1");
+                TweenMax.set(elem, {opacity: 0});
+
+                var tween = TweenMax.to(elem, 0.5, {
+                    opacity:1,
+                    ease: Linear.easeNone
+                });
+
+                var scene = new ScrollMagic.Scene({
+                     triggerElement: '#section10-heading1-trigger',
+                })
+                .setTween(tween)
+                .addTo(scrollMagicController);
+            </script>
+        </section>
+
+        <!-- section-11 -->
+        <section class="full-screenx section-11">
+
+            <div class="container section-container">
+
+              <a class="anchor" id="11">anchor 11</a>
+
+              <div class="animation-placeholder">
+                <div class="trigger" id="section11-heading1-trigger">trigger</div>
+
+                <h2 class="heading font-size-lg" id="section11-heading1">‘I thought you were one of the best speakers I have seen – very engaging, inspiring and relevant – and I have seen a lot of speakers in my day!’<br/>
+                Dominica Andrews, Head of Conferences, Faversham House</h2>
+              </div>
+
+              <div class="animation-placeholder animation-placeholder-arrow" id="section11-arrow1">
+                  <div class="trigger center" id="section11-arrow1-trigger">trigger</div>
+
+                  <div class="arrow-container">
+                    <svg class="arrow up" viewbox="0 0 7 10">
+                      <path d="M3.5 0 L7 10 Q3.5 7 0 10z"/>
+                    </svg>
+                    <svg class="arrow down" viewbox="0 0 7 10">
+                      <path d="M3.5 10 L7 0 Q3.5 3 0 0z"/>
+                    </svg>
+                  </div>
+              </div>
+
+            </div>
+
+            <script type="text/javascript">
+                // animate
+                var elem = document.getElementById("section11-heading1");
+                TweenMax.set(elem, {bottom:'-30px', opacity: 0, position: 'relative'});
+
+                var tween = TweenMax.to(elem, 0.5, {
+                    bottom: 0,
+                    opacity:1,
+                    ease: Linear.easeIn
+                });
+
+                var scene = new ScrollMagic.Scene({
+                     triggerElement: '#section10-arrow1-trigger',
+                })
+                .setTween(tween)
+                .addTo(scrollMagicController);
+
+                // animate
+                var elem = document.getElementById("section11-arrow1");
+                TweenMax.set(elem, {opacity: 0});
+
+                var tween = TweenMax.to(elem, 0.5, {
+                    opacity:1,
+                    ease: Linear.easeNone
+                });
+
+                var scene = new ScrollMagic.Scene({
+                     triggerElement: '#section11-heading1-trigger',
+                })
+                .setTween(tween)
+                .addTo(scrollMagicController);
+            </script>
+        </section>
+
+        <!-- section-12 -->
+        <section class="full-screenx section-12">
+
+            <div class="container section-container">
+
+              <a class="anchor" id="12">anchor 12</a>
+
+              <div class="animation-placeholder">
+                <div class="trigger" id="section12-heading1-trigger">trigger</div>
+
+                <h2 class="heading font-size-lg" id="section12-heading1">If you’re planning a conference or event and think I might add something, I’d love to speak. Email me and let’s arrange a call.</h2>
+              </div>
+
+              <div id="section12-image1" class="animation-placeholder">
+                <div class="trigger" id="section12-image1-trigger">trigger</div>
+                <img class="img-responsive" src="/media/DBA_9867.JPG" alt="">
+              </div>
+
+              <div class="animation-placeholder">
+                <div class="trigger" id="section12-paragraph1-trigger">trigger</div>
+
+                <div class="section-paragraph" id="section12-paragraph1">
+                  <p>Email me: <a href="mailto:info@mrsimoncohen.com">info@mrsimoncohen.com</a></p>
+                </div>
+              </div>
+
+              <div class="animation-placeholder animation-placeholder-arrow" id="section12-arrow1">
+                  <div class="trigger center" id="section12-arrow1-trigger">trigger</div>
+
+                  <div class="arrow-container"><!--
+                    <svg class="arrow up" viewbox="0 0 7 10">
+                      <path d="M3.5 0 L7 10 Q3.5 7 0 10z"/>
+                    </svg>
+                    <svg class="arrow down" viewbox="0 0 7 10">
+                      <path d="M3.5 10 L7 0 Q3.5 3 0 0z"/>
+                    </svg> -->
+                  </div>
+              </div>
+
+            </div>
+
+            <script type="text/javascript">
+                // animate
+                var elem = document.getElementById("section12-heading1");
+                TweenMax.set(elem, {bottom:'-30px', opacity: 0, position: 'relative'});
+
+                var tween = TweenMax.to(elem, 0.5, {
+                    bottom: 0,
+                    opacity:1,
+                    ease: Linear.easeIn
+                });
+
+                var scene = new ScrollMagic.Scene({
+                     triggerElement: '#section11-arrow1-trigger',
+                })
+                .setTween(tween)
+                .addTo(scrollMagicController);
+
+                // animate
+                var elem = document.getElementById("section12-paragraph1");
+                TweenMax.set(elem, {bottom:'-30px', opacity: 0, position: 'relative'});
+
+                var tween = TweenMax.to(elem, 0.5, {
+                    bottom: 0,
+                    opacity:1,
+                    ease: Linear.easeIn
+                });
+
+                var scene = new ScrollMagic.Scene({
+                     triggerElement: '#section12-paragraph1-trigger',
+                })
+                .setTween(tween)
+                .addTo(scrollMagicController);
+
+                // animate
+                var elem = document.getElementById("section12-image1");
+                TweenMax.set(elem, {opacity: 0});
+
+                var tween = TweenMax.to(elem, 0.5, {
+                    opacity:1,
+                    ease: Linear.easeIn
+                });
+
+                var scene = new ScrollMagic.Scene({
+                     triggerElement: '#section12-image1-trigger',
+                })
+                .setTween(tween)
+                .addTo(scrollMagicController);
+
+                // animate
+                var elem = document.getElementById("section12-arrow1");
+                TweenMax.set(elem, {opacity: 0});
+
+                var tween = TweenMax.to(elem, 0.5, {
+                    opacity:1,
+                    ease: Linear.easeNone
+                });
+
+                var scene = new ScrollMagic.Scene({
+                     triggerElement: '#section12-heading1-trigger',
+                })
+                .setTween(tween)
+                .addTo(scrollMagicController);
+            </script>
+        </section>
+
+    </main>
+{% endblock %}

@@ -1,0 +1,67 @@
+{% extends './layout/base.html' %}
+
+{% block head %}
+    <script src="/js/shuffle.js"></script>
+{% endblock %}
+
+{% block title %}
+    <title>Videos | Mr Simon Cohen</title>
+{% endblock %}
+
+{% block main %}
+
+    <main role="main">
+
+        {% include 'nav-keywords.html' %}
+
+        <div class="container container-xl shuffle-sets">
+
+            <!-- set 1 -->
+            <div class="row eq-height shuffle">
+
+                <div class="col-sm-3">
+                    <div class="col-sm-12">
+                        <a href="/keywords/videos/embrace-life" class="grid-item" style="background-image:url('/media/800x1230-embrace-life.jpg')">
+                            <img class="img-responsive" src="/media/800x1230-embrace-life.jpg" alt="Embrace Life">
+                            <span class="item-title-overlay">embrace life...</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="col-sm-12">
+                        <div class="grid-item">
+                            <video autoplay muted controls loop poster="/media/vlcsnap-30sec-Jane-Goodall.png">
+                                <source src="/media/30sec-Jane-Goodall.mp4" type="video/mp4">
+                            </video>
+                            <a href="/keywords/videos/jane-goodall" class="button-video">my job is...</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="col-sm-12">
+                        <div class="grid-item">
+                            <video autoplay muted controls loop poster="/media/vlcsnap-30sec-Just-Peace-Summit.png">
+                                <source src="/media/30sec-Just-Peace-Summit-2014.mp4" type="video/mp4">
+                            </video>
+                            <a href="/keywords/videos/just-peace" class="button-video">just peace...</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="grid-item">
+                            <video autoplay muted controls loop poster="/media/vlcsnap-30sec-Good-Day-at-Work-Interview.png">
+                                <source src="/media/30sec-Good-Day-at-Work-Interview.mp4" type="video/mp4">
+                            </video>
+                            <a href="/keywords/videos/good-day-at-work" class="button-video">powerful questions...</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- set 1 -->
+
+        </div>
+
+    </main>
+{% endblock %}

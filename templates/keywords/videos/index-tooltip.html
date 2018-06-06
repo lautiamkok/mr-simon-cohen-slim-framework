@@ -1,0 +1,131 @@
+{% extends './layout/base.html' %}
+
+{% block head %}
+    <script src="/js/shuffle.js"></script>
+{% endblock %}
+
+{% block title %}
+    <title>Videos | Mr Simon Cohen</title>
+{% endblock %}
+
+{% block main %}
+
+<style type="text/css">
+    .img-tooltip {
+      position:fixed;
+      overflow:hidden;
+    }
+
+    /* Change tooltip colour */
+    /* http://stackoverflow.com/questions/17642447/change-bootstrap-tooltip-color */
+    .tooltip.bottom .tooltip-inner {
+        background-color:green;
+    }
+
+    .tooltip.bottom .tooltip-arrow {
+        border-bottom-color: green;
+    }
+
+    .tooltip.right .tooltip-inner {
+        background-color: #000000; /* fallback */
+        background-color: rgba(0, 0, 0, 0.6);
+        font-family: "Apercu Regular", Arial, sans-serif;
+        font-size: 14px;
+
+        /*background-color: #ccc;
+        color: #000;*/
+    }
+    .tooltip.right .tooltip-arrow {
+        border-right-color: #000000; /* fallback */
+        border-right-color: rgba(0, 0, 0, 0.6);
+
+        /*border-right-color: #ccc;
+        color: #000;*/
+    }
+
+    /* Force tooltip display in one line */
+    /* http://stackoverflow.com/questions/25833199/bootstrap-tooltip-need-to-be-in-single-line */
+    .tooltip-inner {
+      white-space:nowrap;
+      max-width:none;
+    }
+</style>
+    <main role="main">
+
+        {% include 'nav-keywords.html' %}
+
+        <div class="container container-xl shuffle-sets">
+
+            <!-- set 1 -->
+            <div class="row eq-height shuffle">
+
+                <div class="col-sm-3">
+                    <div class="col-sm-12">
+                        <a href="/keywords/videos/embrace-life" class="grid-item" style="background-image:url('/media/Embrace_life.jpeg')">
+                            <img class="img-responsive" src="/media/Embrace_life.jpeg" alt="Embrace Life">
+                            <span class="item-title-overlay">embrace life...</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="col-sm-12">
+                        <div class="grid-item">
+                            <video autoplay muted controls loop class="clip-polygon">
+                                <source src="/media/30sec-Jane-Goodall.mp4" type="video/mp4">
+                            </video>
+                            <a href="/keywords/videos/jane-goodall" class="button-video"></a>
+                            <i class="img-tooltip" data-toggle="tooltip" data-placement="right" title="My job is..."></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="col-sm-12">
+                        <div class="grid-item">
+                            <video autoplay muted controls loop class="clip-polygon">
+                                <source src="/media/30sec-Just-Peace-Summit-2014.mp4" type="video/mp4">
+                            </video>
+                            <a href="/keywords/videos/just-peace" class="button-video"></a>
+                            <i class="img-tooltip" data-toggle="tooltip" data-placement="right" title="Just peace..."></i>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="grid-item">
+                            <video autoplay muted controls loop class="clip-polygon">
+                                <source src="/media/30sec-Good-Day-at-Work-Interview.mp4" type="video/mp4">
+                            </video>
+                            <a href="/keywords/videos/good-day-at-work" class="button-video"></a>
+                            <i class="img-tooltip" data-toggle="tooltip" data-placement="right" title="Good Day at Work"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- set 1 -->
+
+        </div>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    // http://stackoverflow.com/questions/42655524/bootstrap-tooltip-on-mouse-move-tooltip-appears-far-from-the-mouse
+    // http://stackoverflow.com/questions/34034163/how-to-make-bootstrap-3-tooltip-follow-mouse
+    // http://stackoverflow.com/questions/15702867/html-tooltip-position-relative-to-mouse-pointer
+    $(".button-video").on('mousemove', function(e) {
+        var context = $(this).parent();
+        $(".img-tooltip", context).css({
+            top: e.pageY,
+            left: e.pageX + 10
+        });
+        $('[data-toggle="tooltip"]', context).tooltip('show')
+    })
+
+    $(".button-video").on('mouseleave', function(e) {
+        var context = $(this).parent();
+        $('[data-toggle="tooltip"]', context).tooltip('hide')
+    })
+ })
+</script>
+
+    </main>
+{% endblock %}

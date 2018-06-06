@@ -1,0 +1,37 @@
+{% extends './layout/base.html' %}
+
+{% block head %}
+    <script src="js/scroll-reveal.js"></script>
+{% endblock %}
+
+{% block title %}
+    <title>My job is... | Mr Simon Cohen</title>
+{% endblock %}
+
+{% block main %}
+    <main role="main" id="main" class="main-container">
+
+        {% include 'nav-keywords.html' %}
+
+        <!-- section-1 -->
+        <section class="full-screenx section-1">
+            <div class="container section-container">
+
+              <div id="section1-heading1" class="animation-placeholder animated fadeIn">
+                <h2 class="heading font-size-lg">My job is...</h2>
+              </div>
+
+              <div id="section1-video1" class="animation-placeholder animated fadeIn">
+                <!-- 16:9 aspect ratio -->
+                <div class="embed-responsive embed-responsive-16by9">
+                   <iframe src="https://player.vimeo.com/video/207468298" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
+
+                <p>Jane Goodall is the incredible primatologist and peace activist who has brought so much to our understanding of chimpanzees, our nature, and ultimately, ourselves. I had the pleasure of meeting her when we were together at the Parliament of the World's Religions in Barcelona. </p>
+              </div>
+
+            </div>
+        </section>
+
+    </main>
+{% endblock %}

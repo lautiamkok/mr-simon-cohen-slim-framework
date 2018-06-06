@@ -1,0 +1,144 @@
+{% extends './layout/base.html' %}
+
+{% block head %}
+    <script src="/js/shuffle.js"></script>
+{% endblock %}
+
+{% block main %}
+    <main role="main">
+
+        {% include 'nav-keywords.html' %}
+
+        <div class="container container-xl shuffle-sets">
+
+            <!-- set 1 -->
+            <div class="row eq-height shuffle">
+
+                <div class="col-sm-3">
+                    <div class="col-sm-12">
+                        <a href="story#nelson-mandela" class="grid-item" style="background-image:url('/media/68392.jpg')">
+                            <img class="img-responsive" src="/media/68392.jpg" alt="Nelson Mandela">
+                            <span class="item-title-overlay">the fuel of freedom...</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="col-sm-12">
+                        <a href="story#global-tolerance-headquarters" class="grid-item" style="background-image:url('/media/Global Tolerance Headquarters.jpg')">
+                            <img class="img-responsive" src="/media/Global Tolerance Headquarters.jpg" alt="Global Tolerance Headquarters">
+                            <span class="item-title-overlay">on Her Majesty’s service...</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="col-sm-12">
+                        <div class="grid-item">
+                            <video autoplay muted controls loop poster="/media/vlcsnap-Pause-for-Thought.png">
+                                <source src="/media/800p 15 sec Mountains of the Mind - Pause for Thought.mp4" type="video/mp4">
+                            </video>
+                            <a href="speaking#3" class="button-video">pausing for thought...</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <a href="speaking#12" class="grid-item" style="background-image:url('/media/DBA_9867.JPG')">
+                            <img class="img-responsive" src="/media/DBA_9867.JPG" alt="Simon ‘enrich’">
+                            <span class="item-title-overlay">let’s speak...</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- set 1 -->
+
+            <!-- set 2 -->
+            <div class="row eq-height shuffle">
+
+                <div class="col-sm-3">
+                    <div class="col-sm-12">
+                        <a href="story#ted" class="grid-item" style="background-image:url('/media/0armstrongphotocreditj.d.sloan.jpg')">
+                            <img class="img-responsive" src="/media/0armstrongphotocreditj.d.sloan.jpg" alt="Karen Armstrong">
+                            <span class="item-title-overlay">Karen Armstrong’s TED Prize...</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="col-sm-12">
+                        <div class="grid-item">
+                            <video autoplay muted controls loop poster="/media/vlcsnap-it-might-seem-crazy.png">
+                                <source src="/media/800p 30sec - Simon Cohen - It might seem crazy.mp4" type="video/mp4">
+                            </video>
+                            <a href="speaking#1" class="button-video">it might seem crazy...</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="col-sm-12">
+                        <a href="story#purpose" class="grid-item" style="background-image:url('/media/Seren Baby.jpeg')">
+                            <img class="img-responsive" src="/media/Seren Baby.jpeg" alt="Seren baby photo">
+                            <span class="item-title-overlay">purpose...</span>
+                        </a>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="grid-item">
+                            <video autoplay muted controls loop poster="/media/vlcsnap-Jedi-Knights.png">
+                                <source src="/media/800p Heartbites Simon Cohen - Summercamp- Jedi Knights super and force part 2 shortest.mp4" type="video/mp4">
+                            </video>
+                            <a href="speaking#8" class="button-video">how do you move the meaning of a word...?</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- set 2 -->
+
+            <!-- set 3 -->
+            <div class="row eq-height shuffle">
+
+                <div class="col-sm-3">
+                    <div class="col-sm-12">
+                        <a href="story#amritsar" class="grid-item" style="background-image:url('/media/happiness-dalai-lama-bhutan.jpg')">
+                            <img class="img-responsive" src="/media/happiness-dalai-lama-bhutan.jpg" alt="Dalai Lama Portrait">
+                            <span class="item-title-overlay">spreading the love...</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="col-sm-12">
+                        <div class="grid-item">
+                            <video autoplay muted controls loop poster="/media/vlcsnap-Fox.png">
+                                <source src="/media/800p 30sec Simon Cohen - Fox Business News.mp4" type="video/mp4">
+                            </video>
+                            <a href="story#sabbatical" class="button-video">one year sabbatical...</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="col-sm-12">
+                        <a href="speaking#4" class="grid-item" style="background-image:url('/media/800-x-1230-cannes-lions.png')">
+                            <img class="img-responsive" src="/media/800-x-1230-cannes-lions.png" alt="Cannes">
+                            <span class="item-title-overlay">cannes we speak...?</span>
+                        </a>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="grid-item">
+                            <video autoplay muted controls loop poster="/media/vlcsnap-Multiplier.png">
+                                <source src="/media/800p 30sec Audio Visualizer - The Multiplier Effect.mp4" type="video/mp4">
+                            </video>
+                            <a href="story#multiplier-effect" class="button-video">the multiplier effect...</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- set 3 -->
+
+        </div>
+
+    </main>
+{% endblock %}

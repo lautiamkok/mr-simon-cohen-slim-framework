@@ -1,0 +1,60 @@
+{% extends './layout/base.html' %}
+
+{% block head %}
+    <script src="/js/shuffle.js"></script>
+{% endblock %}
+
+{% block title %}
+    <title>Leadership | Mr Simon Cohen</title>
+{% endblock %}
+
+{% block main %}
+    <main role="main">
+
+        {% include 'nav-keywords.html' %}
+
+        <div class="container container-xl shuffle-sets">
+
+            <!-- set 1 -->
+            <div class="row eq-height shuffle">
+
+                <div class="col-sm-3">
+                    <div class="col-sm-12">
+                        <a href="/keywords/leadership/jenistepanek" class="grid-item" style="background-image:url('/media/IMGP8125.jpg')">
+                            <img class="img-responsive" src="/media/IMGP8125.jpg" alt="Jeni Stepanek photo">
+                            <span class="item-title-overlay">don't react - respond...</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="col-sm-12">
+                        <a href="/keywords/leadership/blacklivesmatter" class="grid-item" style="background-image:url('/media/Black-Lives-Matter.jpeg')">
+                            <img class="img-responsive" src="/media/Black-Lives-Matter.jpeg" alt="Sustainability Leaders Forum 30 second">
+                            <span class="item-title-overlay">the 'why?' behind movements...</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="col-sm-12">
+                        <a href="/keywords/leadership/raya" class="grid-item" style="background-image:url('/media/13350545_1190050174445854_4668704229982243677_o.jpeg')">
+                            <img class="img-responsive" src="/media/13350545_1190050174445854_4668704229982243677_o.jpeg" alt="Raya smiling">
+                            <span class="item-title-overlay">older is not wiser...</span>
+                        </a>
+                    </div>
+                    <div class="col-sm-12">
+                        <a href="/keywords/leadership/desmondtutedalailama" class="grid-item" style="background-image:url('/media/3o6Ztn9G9JZjvVTvq0.gif')">
+                            <img class="img-responsive" src="/media/3o6Ztn9G9JZjvVTvq0.gif" alt="Desmond Tutu and Dalai Lama ’">
+                            <span class="item-title-overlay">a joy to be with...</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- set 1 -->
+
+        </div>
+
+    </main>
+{% endblock %}

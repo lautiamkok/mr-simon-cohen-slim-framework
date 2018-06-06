@@ -1,0 +1,37 @@
+{% extends './layout/base.html' %}
+
+{% block head %}
+    <script src="js/scroll-reveal.js"></script>
+{% endblock %}
+
+{% block title %}
+    <title>Robbie Williams | Mr Simon Cohen</title>
+{% endblock %}
+
+{% block main %}
+    <main role="main" id="main" class="main-container">
+
+        {% include 'nav-keywords.html' %}
+
+        <!-- section-1 -->
+        <section class="full-screenx section-1">
+            <div class="container section-container">
+
+              <div id="section1-heading1" class="animation-placeholder animated fadeIn">
+                <h2 class="heading font-size-lg">Robbie says...<br/><br/>'I want to follow him'</h2>
+              </div>
+
+              <div id="section4-image1" class="animation-placeholder">
+                  <div class="trigger" id="section4-image1-trigger">trigger</div>
+
+                  <img class="img-responsive" src="/media/Williams_Robbie_PS.jpg" alt="Robbie Williams">
+
+                  <p>Sharing a 315 word script with 10 million people is daunting at the best of times, but when Robbie Williams was sitting next to me as I delivered a Pause for Thought on the Chris Evans Breakfast Show, it all got a little surreal. Robbie was so lovely - not just his kind words on air (little did he know that I wanted to follow him...out of the studio), but he was warm, humble and came across as an all-round dude.</p>
+
+              </div>
+
+            </div>
+        </section>
+
+    </main>
+{% endblock %}

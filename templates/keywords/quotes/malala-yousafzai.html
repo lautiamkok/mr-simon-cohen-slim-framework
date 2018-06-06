@@ -1,0 +1,37 @@
+{% extends './layout/base.html' %}
+
+{% block head %}
+    <script src="js/scroll-reveal.js"></script>
+{% endblock %}
+
+{% block title %}
+    <title>Malala | Mr Simon Cohen</title>
+{% endblock %}
+
+{% block main %}
+    <main role="main" id="main" class="main-container">
+
+        {% include 'nav-keywords.html' %}
+
+        <!-- section-1 -->
+        <section class="full-screenx section-1">
+            <div class="container section-container">
+
+              <div id="section1-heading1" class="animation-placeholder animated fadeIn">
+                <h2 class="heading font-size-lg">'When the whole world is silent, even one voice becomes powerful.' <br/><br/>Malala</h2>
+              </div>
+
+              <div id="section4-image1" class="animation-placeholder">
+                  <div class="trigger" id="section4-image1-trigger">trigger</div>
+
+                  <img class="img-responsive" src="/media/malala-yousafzai-ftr.jpg" alt="Malala">
+
+                  <p>Malala displays the virtue of courage in abundance. To speak her truth, even when her life is at risk. I believe values and virtues matter most when they are tested. Malala's inner strength, calmness, and clarity are an inspiration to me.</p>
+
+              </div>
+
+            </div>
+        </section>
+
+    </main>
+{% endblock %}

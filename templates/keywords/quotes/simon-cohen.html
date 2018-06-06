@@ -1,0 +1,37 @@
+{% extends './layout/base.html' %}
+
+{% block head %}
+    <script src="js/scroll-reveal.js"></script>
+{% endblock %}
+
+{% block title %}
+    <title>Simon Cohen | Mr Simon Cohen</title>
+{% endblock %}
+
+{% block main %}
+    <main role="main" id="main" class="main-container">
+
+        {% include 'nav-keywords.html' %}
+
+        <!-- section-1 -->
+        <section class="full-screenx section-1">
+            <div class="container section-container">
+
+              <div id="section1-heading1" class="animation-placeholder animated fadeIn">
+                <h2 class="heading font-size-lg">Quoting someone is an act of humility, honouring and celebrating their ability to say something better than you</h2>
+              </div>
+
+              <div id="section4-image1" class="animation-placeholder">
+                  <div class="trigger" id="section4-image1-trigger">trigger</div>
+
+                  <img class="img-responsive" src="/media/20130529-DSC_0250.jpeg" alt="Simon Cohen">
+
+                  <p>If you can't have a quote keyword with a quote about quoting people, then I'm going home! In all seriousness, I have seen some criticism online of people (including me) who quote others, as though it is an exercise of ego, or trying to seem clever. On the contrary, I believe we only quote people because they are able to articulate something in a way that we admire. When we quote them, we lift them up and their ability - hence, it is an act of humility.</p>
+
+              </div>
+
+            </div>
+        </section>
+
+    </main>
+{% endblock %}

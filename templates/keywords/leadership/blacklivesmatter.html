@@ -1,0 +1,37 @@
+{% extends './layout/base.html' %}
+
+{% block head %}
+    <script src="js/scroll-reveal.js"></script>
+{% endblock %}
+
+{% block title %}
+    <title>The 'why?' behind movements | Mr Simon Cohen</title>
+{% endblock %}
+
+{% block main %}
+    <main role="main" id="main" class="main-container">
+
+        {% include 'nav-keywords.html' %}
+
+        <!-- section-1 -->
+        <section class="full-screenx section-1">
+            <div class="container section-container">
+
+              <div id="section1-heading1" class="animation-placeholder animated fadeIn">
+                <h2 class="heading font-size-lg">The 'why?' behind movements...</h2>
+              </div>
+
+              <div id="section1-video1" class="animation-placeholder animated fadeIn">
+                <!-- 16:9 aspect ratio -->
+                <div class="embed-responsive embed-responsive-16by9">
+                   <iframe src="https://player.vimeo.com/video/207467074" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
+
+                <p>In my keynote talk 'The Power of Why To Sustain Leaders' at the Sustainability Leaders Forum in January 2017, I argued that 'why?' lies behind all social movements. All the leaders I have ever worked with exude their 'why' - their deepest sense of purpose - with every fibre of their being. As Simon Sinek says in his TED talk 'How great leaders inspire action,' leaders start with their why - and only then go on to speak about the 'what'. A fundamental part of my role as a speaker and coach is to connect people's personal values and virtues with the beliefs underpinning the issues they work with. Why do you do what you do? What do you value most in the world? </p>
+              </div>
+
+            </div>
+        </section>
+
+    </main>
+{% endblock %}

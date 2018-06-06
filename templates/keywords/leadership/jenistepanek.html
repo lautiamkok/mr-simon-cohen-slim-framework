@@ -1,0 +1,36 @@
+{% extends './layout/base.html' %}
+
+{% block head %}
+    <script src="js/scroll-reveal.js"></script>
+{% endblock %}
+
+{% block title %}
+    <title>Don't react...respond | Mr Simon Cohen</title>
+{% endblock %}
+
+{% block main %}
+    <main role="main" id="main" class="main-container">
+
+        {% include 'nav-keywords.html' %}
+
+        <!-- section-1 -->
+        <section class="full-screenx section-1">
+            <div class="container section-container">
+
+              <div id="section1-heading1" class="animation-placeholder animated fadeIn">
+                <h2 class="heading font-size-lg">Don't react - respond...</h2>
+              </div>
+
+              <div id="section4-image1" class="animation-placeholder">
+                  <div class="trigger" id="section4-image1-trigger">trigger</div>
+
+                  <img class="img-responsive" src="/media/Jeni-Stepanek.jpeg" alt="Dr Jeni Stepanek">
+
+                  <p>Dr Jeni Stepanek is a peace-maker, a shining example of love leadership, and a dear friend and colleague. All four of her children died under the age of 14 from a rare neuro-muscular disease, which she now suffers from as well. One of  those children, Mattie J T Stepanek, was an astonishing poet and peacemaker. Recently voted by Oprah Winfrey as her favourite guest of all time, Mattie was a New York Times best selling author, and best friends with President Jimmy Carter. It’s fair to say Mattie wasn’t your average little boy. Despite the pain, or perhaps because of the pain, his was a message of peace, reminding us to play after every storm. As a dad, it's unthinkable for me to understand how it feels to lose a child, and the strength it must take just to keep going. But to lose all your children? Somehow, though, Jeni doesn’t react with anger. Echoing Mattie’s message, she challenges us never to react to feelings of injustice, but to respond. And she chooses, every day, to respond with love and compassion. </p>
+              </div>
+
+            </div>
+        </section>
+
+    </main>
+{% endblock %}

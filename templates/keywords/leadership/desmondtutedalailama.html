@@ -1,0 +1,36 @@
+{% extends './layout/base.html' %}
+
+{% block head %}
+    <script src="js/scroll-reveal.js"></script>
+{% endblock %}
+
+{% block title %}
+    <title>A joy to be with... | Mr Simon Cohen</title>
+{% endblock %}
+
+{% block main %}
+    <main role="main" id="main" class="main-container">
+
+        {% include 'nav-keywords.html' %}
+
+        <!-- section-1 -->
+        <section class="full-screenx section-1">
+            <div class="container section-container">
+
+              <div id="section1-heading1" class="animation-placeholder animated fadeIn">
+                <h2 class="heading font-size-lg">A joy to be with...</h2>
+              </div>
+
+              <div id="section4-image1" class="animation-placeholder">
+                  <div class="trigger" id="section4-image1-trigger">trigger</div>
+
+                  <img class="img-responsive" src="/media/dalai-lama.jpg" alt="Dalai Lama">
+
+                  <p>When I worked with His Holiness Dalai Lama at the Golden Temple in Amritsar, he gave a talk on the meaning of life. After a few minutes, he started giggling. Soon, he had everyone in the room, including the world's media, laughing so hard it hurt. Not a bad way to capture the meaning of life! And when I worked with Desmond Tutu, he came up to me with laughing eyes and a beautiful smile, and gave me a massive high five. I learned from these two holy men - authors of The Book of Joy - that leadership, spirituality and social change don't need to be heavy, serious subjects. Instead, they can be full of laughter and love. When we use the power of joy, we open people up, and create the space for change to take root.</p>
+              </div>
+
+            </div>
+        </section>
+
+    </main>
+{% endblock %}
